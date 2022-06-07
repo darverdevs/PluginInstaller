@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PluginInstaller:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PluginInstaller_jar</output-path>
+    <root id="archive" name="PluginInstaller.jar">
+      <element id="module-output" name="PluginInstaller" />
+    </root>
+  </artifact>
+</component>

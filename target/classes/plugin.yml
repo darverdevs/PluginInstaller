@@ -1,0 +1,11 @@
+name: PluginInstaller
+version: 1.0.0
+main: tech.nully.PluginInstaller.Main
+prefix: [PluginInstaller]
+authors: [BongoCat]
+description: A plugin that is capable of installing the latest compatible version of plugins with eaglercraft
+website: nully.tech
+commands:
+  installpl:
+    usage: /<command> <plugin>
+    description: Installs the latest compatible version of the requested plugin
