@@ -6,6 +6,9 @@ import org.bukkit.command.CommandSender;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
@@ -30,5 +33,13 @@ public class Installer {
         Files.copy(in, f.toPath(), StandardCopyOption.REPLACE_EXISTING);
         System.out.println(f.toPath().toString());
         s.sendMessage("Check 2x passed");
+    }
+
+    public boolean IsValidLink(String url) throws MalformedURLException, IOException{
+        URL u = new URL(url);
+        HttpURLConnection huc =  (HttpURLConnection)  u.openConnection();
+        huc.setRequestMethod("GET");
+        huc.connect();
+        return huc.getResponseCode() == 200;
     }
 }
