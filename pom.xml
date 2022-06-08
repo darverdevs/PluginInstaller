@@ -9,6 +9,7 @@
     <version>1.0.0</version>
     <modules>
         <module>untitled</module>
+        <module>untitled</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -12,6 +12,7 @@
     <bytecodeTargetLevel>
       <module name="Installer" target="1.8" />
       <module name="PluginInstaller" target="1.8" />
+      <module name="PrimCore" target="1.8" />
       <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
   </component>
