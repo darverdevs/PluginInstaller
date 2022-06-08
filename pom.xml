@@ -5,14 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tech.nully</groupId>
-    <artifactId>EaglerPluginInstaller</artifactId>
+    <artifactId>EaglerPluginUpdater</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>PluginUpdater</name>
-
-    <description>A plugin made to install other plugins from an online repository to eaglercraft servers with a single command</description>
-    <url>nully.tech</url>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,6 +35,4 @@
             <version>1.5.2-R1.0</version>
         </dependency>
     </dependencies>
-
-
 </project>

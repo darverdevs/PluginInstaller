@@ -22,8 +22,8 @@ public class Main extends JavaPlugin {
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
-                ChatColor.GREEN + "[EaglerPluginUpdater]" + ChatColor.AQUA + " EaglerPluginInstaller V1.0.8 is now Enabled! :D");
-        getServer().getConsoleSender().sendMessage("You do not need to do anything, this plugin will automatically update your PluginInstaller on startup");
+                ChatColor.GREEN + "[EaglerPluginUpdater]" + ChatColor.AQUA + " EaglerPluginUpdater V1.0.9 is now Enabled! :D");
+        getServer().getConsoleSender().sendMessage("You do not need to do anything, this plugin will automatically update your PluginUpdater on startup");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
     }
