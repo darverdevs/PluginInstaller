@@ -16,7 +16,9 @@ public class Main extends JavaPlugin {
         instance = this;
         try {
             Updater.UpdateInstaller();
-        } catch (IOException e) {}
+        } catch (IOException e) {
+            System.out.println("PluginUpdater: Error while updating PluginInstaller, please contact Bongo Cat#1100 on discord");
+        }
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
