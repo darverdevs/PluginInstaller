@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Installer" />
-        <module name="EaglerPluginInstaller" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="EaglerPluginUpdater" target="1.8" />
       <module name="Installer" target="1.8" />
       <module name="PluginInstaller" target="1.8" />
       <module name="PrimCore" target="1.8" />
