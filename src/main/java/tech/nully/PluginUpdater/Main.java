@@ -1,11 +1,10 @@
-package tech.nully.PluginInstaller;
+package tech.nully.PluginUpdater;
 
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
-import java.util.HashMap;
 
 public class Main extends JavaPlugin {
     private static Plugin instance = null;
@@ -15,12 +14,6 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        try {
-            Installer.UpdatePlugin();
-            System.out.println(ChatColor.AQUA + "PluginInstaller has been udpated");
-        } catch (IOException e) {}
-        getCommand("install").setExecutor(new InstallCommand());
-        getCommand("plist").setExecutor(new plistCommand());
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
