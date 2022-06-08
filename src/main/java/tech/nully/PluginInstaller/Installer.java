@@ -29,11 +29,13 @@ public class Installer {
         return huc.getResponseCode() == 200;
     }
 
-    public static void UpdatePlugin() throws IOException {
-        InputStream in = URI.create("https://github.com/darverdevs/PluginInstaller/raw/main/out/artifacts/PluginInstaller_jar/PluginInstaller.jar")
-                .toURL().openStream();
-        File f = new File(Main.getInstance().getDataFolder().getParent() + "/" + "PluginInstaller" + ".jar");
-        f.delete();
-        Files.copy(in, f.toPath(), StandardCopyOption.REPLACE_EXISTING);
+    public static void InstallUpdater() throws IOException {
+        File file = new File(Main.getInstance().getDataFolder().getParent() + "/PluginUpdater.jar");
+        if (!(file.exists())) {
+            URL plugin = URI.create("https://github.com/darverdevs/PluginInstaller/tree/Updater/out/artifacts/PluginUpdater_jar")
+                    .toURL();
+            InputStream in = plugin.openStream();
+            Files.copy(in, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        }
     }
 }

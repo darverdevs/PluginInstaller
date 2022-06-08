@@ -2,6 +2,7 @@ name: EaglerPluginInstaller
 version: 1.0.8
 main: tech.nully.PluginInstaller.Main
 prefix: [PluginInstaller]
+loadbefore: [PluginUpdater]
 authors: [BongoCat]
 description: A plugin that is capable of installing the latest compatible version of plugins with eaglercraft
 website: nully.tech
