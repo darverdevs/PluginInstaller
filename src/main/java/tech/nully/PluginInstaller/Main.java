@@ -18,15 +18,13 @@ public class Main extends JavaPlugin {
         try {
             Installer.UpdatePlugin();
             System.out.println(ChatColor.AQUA + "PluginInstaller has been udpated");
-            getServer().getPluginManager().disablePlugin(this);
-            getServer().getPluginManager().enablePlugin(this);
         } catch (IOException e) {}
         getCommand("install").setExecutor(new InstallCommand());
         getCommand("plist").setExecutor(new plistCommand());
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
-                ChatColor.GREEN + "[PluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.0.6 is now Enabled! :D");
+                ChatColor.GREEN + "[PluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.0.7 is now Enabled! :D");
         getServer().getConsoleSender().sendMessage("To use PluginInstaller, run the command \"/install <pluginname>\" (\"install <pluginname>\" in console) to install a plugin");
         getServer().getConsoleSender().sendMessage("To get a list of installable plugins, use the command \"/plist\" or \"plist\" in console");
         getServer().getConsoleSender().sendMessage("You can request to add a new plugin to the database by going to https://github.com/darverdevs/PluginInstallerRepo/tree/main");
@@ -40,7 +38,7 @@ public class Main extends JavaPlugin {
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
-                ChatColor.GREEN + "[PluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.0.6 is now Disabled! D:");
+                ChatColor.GREEN + "[PluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.0.7 is now Disabled! D:");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
     }
