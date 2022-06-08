@@ -12,6 +12,3 @@ commands:
   plist:
     usage: /<command>
     description: Gives you a list of available plugins with PluginInstaller
-  update:
-    usage: /<command>
-    description: Updates the plugin to the latest version
