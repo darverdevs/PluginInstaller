@@ -23,7 +23,7 @@ public class Main extends JavaPlugin {
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
-                ChatColor.GREEN + "[EaglerPluginInstaller]" + ChatColor.AQUA + " EaglerPluginInstaller V1.0.8 is now Enabled! :D");
+                ChatColor.GREEN + "[EaglerPluginInstaller]" + ChatColor.AQUA + " EaglerPluginInstaller V1.0.9 is now Enabled! :D");
         getServer().getConsoleSender().sendMessage("To use PluginInstaller, run the command \"/install <pluginname>\" (\"install <pluginname>\" in console) to install a plugin");
         getServer().getConsoleSender().sendMessage("To get a list of installable plugins, use the command \"/plist\" or \"plist\" in console");
         getServer().getConsoleSender().sendMessage("You can request to add a new plugin to the database by going to https://github.com/darverdevs/PluginInstallerRepo/tree/main");
@@ -37,7 +37,7 @@ public class Main extends JavaPlugin {
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
-                ChatColor.GREEN + "[EaglerPluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.0.8 is now Disabled! D:");
+                ChatColor.GREEN + "[EaglerPluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.0.9 is now Disabled! D:");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
     }
