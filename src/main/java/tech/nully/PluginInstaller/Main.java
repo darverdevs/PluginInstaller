@@ -37,7 +37,7 @@ public class Main extends JavaPlugin {
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
-                ChatColor.GREEN + "[PluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.0.0 is now Disabled! D:");
+                ChatColor.GREEN + "[PluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.0.4 is now Disabled! D:");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
     }
