@@ -16,7 +16,7 @@ import java.util.HashMap;
 
 public class Installer {
 
-    public void InstallPlugin(InputStream in, String pluginName, CommandSender s) throws IOException {
+    public void InstallPlugin(InputStream in, String pluginName) throws IOException {
         File f = new File(Main.getInstance().getDataFolder().getParent() + "/" + pluginName + ".jar");
         Files.copy(in, f.toPath(), StandardCopyOption.REPLACE_EXISTING);
     }
@@ -38,8 +38,11 @@ public class Installer {
                 InputStream in = URI.create("https://github.com/darverdevs/EaglerPluginUpdater/raw/main/out/artifacts/EaglerPluginUpdater_jar/EaglerPluginUpdater.jar")
                         .toURL().openStream();
                 System.out.println("Check 3 passed");
-                Files.copy(in, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
-            } catch (IOException e) {}
+                Installer ins = new Installer();
+                ins.InstallPlugin(in, "EaglerPluginUpdater");
+            } catch (IOException e) {
+                System.out.println("Invalid Link");
+            }
         }
     }
 }
