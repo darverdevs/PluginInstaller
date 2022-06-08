@@ -9,7 +9,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>PrimCore</name>
+    <name>PluginUpdater</name>
 
     <description>A plugin made to install other plugins from an online repository to eaglercraft servers with a single command</description>
     <url>nully.tech</url>

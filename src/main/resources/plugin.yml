@@ -1,6 +1,6 @@
 name: EaglerPluginUpdater
 version: 1.0.8
-main: tech.nully.PluginInstaller.Main
+main: tech.nully.PluginUpdater.Main
 prefix: [PluginUpdater]
 authors: [BongoCat]
 depend: [PluginInstaller]
