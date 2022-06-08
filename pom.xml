@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tech.nully</groupId>
-    <artifactId>PrimCore</artifactId>
+    <artifactId>EaglerPluginInstaller</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>PrimCore</name>
 
-    <description>A custom coded plugin for primcraft written in Kotlin</description>
+    <description>A plugin made to install other plugins from an online repository to eaglercraft servers with a single command</description>
     <url>nully.tech</url>
     <properties>
         <java.version>1.8</java.version>
