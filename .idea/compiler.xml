@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="EaglerPluginInstaller" target="1.8" />
+      <module name="EaglerPluginUpdater" target="1.8" />
       <module name="Installer" target="1.8" />
       <module name="PrimCore" target="1.8" />
     </bytecodeTargetLevel>
