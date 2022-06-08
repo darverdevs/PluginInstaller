@@ -1,5 +1,5 @@
 name: PluginInstaller
-version: 1.0.0
+version: 1.0.7
 main: tech.nully.PluginInstaller.Main
 prefix: [PluginInstaller]
 authors: [BongoCat]
