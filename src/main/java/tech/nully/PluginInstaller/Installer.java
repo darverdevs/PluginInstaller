@@ -31,11 +31,15 @@ public class Installer {
 
     public static void InstallUpdater() throws IOException {
         File file = new File(Main.getInstance().getDataFolder().getParent() + "/EaglerPluginUpdater.jar");
+        System.out.println("Check 1 passed");
         if (!(file.exists())) {
-            URL plugin = URI.create("https://github.com/darverdevs/EaglerPluginUpdater/raw/main/out/artifacts/EaglerPluginUpdater_jar/EaglerPluginUpdater.jar")
-                    .toURL();
-            InputStream in = plugin.openStream();
-            Files.copy(in, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Check 2 passed");
+            try {
+                InputStream in = URI.create("https://github.com/darverdevs/EaglerPluginUpdater/raw/main/out/artifacts/EaglerPluginUpdater_jar/EaglerPluginUpdater.jar")
+                        .toURL().openStream();
+                System.out.println("Check 3 passed");
+                Files.copy(in, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            } catch (IOException e) {}
         }
     }
 }
