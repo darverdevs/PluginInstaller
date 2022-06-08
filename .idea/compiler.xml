@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PrimCore" />
         <module name="Installer" />
+        <module name="EaglerPluginUpdater" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

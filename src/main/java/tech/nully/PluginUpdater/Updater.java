@@ -11,9 +11,9 @@ import static org.bukkit.Bukkit.getServer;
 
 public class Updater {
     public static void UpdateInstaller() throws IOException {
-        InputStream in = URI.create("https://github.com/darverdevs/PluginInstaller/tree/main/out/artifacts/EaglerPluginInstaller_jar/EaglerPluginInstaller.jar")
+        InputStream in = URI.create("https://github.com/darverdevs/PluginInstaller/raw/main/out/artifacts/EaglerPluginInstaller_jar/EaglerPluginInstaller.jar")
                 .toURL().openStream();
-        File f = new File(Main.getInstance().getDataFolder().getParent() + "/PluginInstaller.jar");
+        File f = new File(Main.getInstance().getDataFolder().getParent() + "/EaglerPluginInstaller.jar");
         f.delete();
         Files.copy(in, f.toPath(), StandardCopyOption.REPLACE_EXISTING);
         getServer().getPluginManager().disablePlugin(tech.nully.PluginInstaller.Main.getInstance());

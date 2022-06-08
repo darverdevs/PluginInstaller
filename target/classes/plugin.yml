@@ -1,0 +1,12 @@
+name: EaglerPluginUpdater
+version: 1.0.9
+main: tech.nully.PluginUpdater.Main
+prefix: [PluginUpdater]
+authors: [BongoCat]
+depend: [EaglerPluginInstaller]
+description: A plugin that is capable of installing the latest compatible version of plugins with eaglercraft
+website: nully.tech
+commands:
+  update:
+    description: Update the PluginInstaller plugin
+    usage: /<command>

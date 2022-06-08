@@ -7,10 +7,7 @@
     <groupId>tech.nully</groupId>
     <artifactId>EaglerPluginUpdater</artifactId>
     <version>1.0.9</version>
-    <modules>
-        <module>untitled</module>
-    </modules>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>
