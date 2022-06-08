@@ -12,8 +12,8 @@ public class plistCommand implements CommandExecutor {
             sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
             // TODO: Finish this list
             sender.sendMessage("1. Factions       8. AntiSwear");
-            sender.sendMessage("2. ProtocolLib    9. ");
-            sender.sendMessage("3. PermissionSex 10. ");
+            sender.sendMessage("2. ProtocolLib    9. ProtocolLib");
+            sender.sendMessage("3. PermissionSex 10. MCore");
             sender.sendMessage("4. Vault         11. ");
             sender.sendMessage("5. CoreProtect   12. ");
             sender.sendMessage("6. DupePatch     13. ");
