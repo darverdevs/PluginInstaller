@@ -21,6 +21,7 @@ public class Main extends JavaPlugin {
         } catch (IOException e) {}
         getCommand("install").setExecutor(new InstallCommand());
         getCommand("plist").setExecutor(new plistCommand());
+        getCommand("update").setExecutor(new UpdateCommand());
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
