@@ -20,7 +20,6 @@ public class InstallCommand implements CommandExecutor {
         if (cmd.getName().equalsIgnoreCase("install")) {
             if (snder.isOp() || snder instanceof ConsoleCommandSender) {
                 Installer ins = new Installer();
-
                 // handler for install argument
                 if (args.length == 1) {
                     String Install_Jar = args[0].toLowerCase();
