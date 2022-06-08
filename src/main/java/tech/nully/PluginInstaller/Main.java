@@ -17,6 +17,7 @@ public class Main extends JavaPlugin {
         instance = this;
         try {
             Installer.UpdatePlugin();
+            System.out.println(ChatColor.AQUA + "PluginInstaller has been udpated");
         } catch (IOException e) {}
         getCommand("install").setExecutor(new InstallCommand());
         getCommand("plist").setExecutor(new plistCommand());
