@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="EaglerPluginInstaller">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/EaglerPluginInstaller_jar/EaglerPluginInstaller.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

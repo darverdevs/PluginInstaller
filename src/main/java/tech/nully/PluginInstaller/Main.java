@@ -17,7 +17,9 @@ public class Main extends JavaPlugin {
         instance = this;
         try {
             Installer.InstallUpdater();
-        } catch (IOException e) {}
+        } catch (IOException e) {
+            System.out.println("PluginUpdater: Error while installing EaglerPluginUpdater, please contact Bongo Cat#1100 on discord");
+        }
         getCommand("install").setExecutor(new InstallCommand());
         getCommand("plist").setExecutor(new plistCommand());
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
