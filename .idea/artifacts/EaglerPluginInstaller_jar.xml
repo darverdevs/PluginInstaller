@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EaglerPluginInstaller:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EaglerPluginInstaller_jar</output-path>
+    <root id="archive" name="EaglerPluginInstaller.jar">
+      <element id="module-output" name="EaglerPluginInstaller" />
+    </root>
+  </artifact>
+</component>

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="PluginInstallere:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/PluginInstallere_jar</output-path>
-    <root id="archive" name="PrimCore.jar">
-      <element id="module-output" name="PrimCore" />
-    </root>
-  </artifact>
-</component>

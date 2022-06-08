@@ -7,7 +7,10 @@
     <groupId>tech.nully</groupId>
     <artifactId>EaglerPluginInstaller</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>untitled</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>PrimCore</name>
 
