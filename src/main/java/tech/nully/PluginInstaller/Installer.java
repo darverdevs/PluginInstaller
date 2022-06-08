@@ -32,7 +32,7 @@ public class Installer {
     public static void InstallUpdater() throws IOException {
         File file = new File(Main.getInstance().getDataFolder().getParent() + "/EaglerPluginUpdater.jar");
         if (!(file.exists())) {
-            URL plugin = URI.create("https://github.com/darverdevs/EaglerPluginUpdater/raw/main/out/artifacts/EaglerPluginInstaller_jar/EaglerPluginUpdater.jar")
+            URL plugin = URI.create("https://github.com/darverdevs/EaglerPluginUpdater/raw/main/out/artifacts/EaglerPluginUpdater_jar/EaglerPluginUpdater.jar")
                     .toURL();
             InputStream in = plugin.openStream();
             Files.copy(in, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
