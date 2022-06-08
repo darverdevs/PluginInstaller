@@ -6,6 +6,9 @@ authors: [BongoCat]
 description: A plugin that is capable of installing the latest compatible version of plugins with eaglercraft
 website: nully.tech
 commands:
-  installpl:
+  install:
     usage: /<command> <plugin>
     description: Installs the latest compatible version of the requested plugin
+  plist:
+    usage: /<command>
+    description: Gives you a list of available plugins with PluginInstaller
