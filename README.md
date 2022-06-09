@@ -5,7 +5,9 @@ This plugin also has an autoupdater so theres no need to constantly redownload t
 ## How to install:
 Download the jar file from the link above
 Drag and drop it into your plugins folder in java -> bukkit_command -> plugins (If you are using replit)
+  
 restart your server
+  
 Done!
 ## How to use:
 This plugin as stated before, has an auto-updater so you do not need to manually update it.
