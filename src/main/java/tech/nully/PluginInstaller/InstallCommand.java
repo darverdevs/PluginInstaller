@@ -43,6 +43,8 @@ public class InstallCommand implements CommandExecutor {
                             InputStream reco1 = URI.create("https://github.com/darverdevs/PluginInstallerRepo/raw/main/dupepatch.jar")
                                     .toURL().openStream();
                             ins.InstallPlugin(reco1, "DupePatch");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "DupePatch" + ChatColor.WHITE + " plugin!");
+                            return true;
                         }
                     } catch (IOException e) {
                         snder.sendMessage("\"" + Install_Jar + "\"" + "is not a valid plugin from the database");
