@@ -20,6 +20,8 @@ This plugin as stated before, has an auto-updater so you do not need to manually
 #### Coming soon:
 - `/repo`: lets you add your own repository of plugins
 - A "front page" list of plugins that shows a list of the most commonly installed plugins and suggests plugins for you to intall based on the plugins you have
+- More recommended plugins
+- Plugin voting system
 
 ## How to contribute:
 Since PluginInstaller runs on an autoupdater, all contributions must be made from pull requests either by forks or branches approved by someone in the darverdevs group and tested before a pull request is made
