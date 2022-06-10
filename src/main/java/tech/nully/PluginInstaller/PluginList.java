@@ -28,12 +28,20 @@ public class PluginList {
         for (int i = 15; i < 22; i++) {
             String Col1 = "";
             String Col2 = "";
+
+            //  Null checkers for elements in the Array
             if (AlphaPluginList[i-1] != null) {
                 Col1 = AlphaPluginList[i-1];
+            } else {
+                Col1 = "N/A";
             }
             if (AlphaPluginList[SecondCollumn-1] != null) {
                 Col2 = AlphaPluginList[SecondCollumn-1];
+            } else {
+                Col2 = "N/A";
             }
+            // _________________________________________
+
             sender.sendMessage(i+". "+ Col1 + "" + SecondCollumn + ". " + Col2);
             SecondCollumn++;
         }
