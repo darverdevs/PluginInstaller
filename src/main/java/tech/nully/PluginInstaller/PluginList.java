@@ -3,10 +3,6 @@ package tech.nully.PluginInstaller;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
-import java.net.*;
-import java.io.*;
-import java.util.List;
-
 public class PluginList {
     private static String[] AlphaPluginList = new String[]{"AntiSwear", "BitchFilter", "CoreProtect", "CrackShot", "DupePatch", "DynMap", "Essentials",
     "EssenttialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "MCore", "MyWarp",};
@@ -24,6 +20,8 @@ public class PluginList {
 
     public static void SendPG2ToSender(CommandSender sender) {
         sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
+
+        // List -------------------------------------------------------------
         int SecondCollumn = 22;
         for (int i = 15; i < 22; i++) {
             String Col1 = "";
