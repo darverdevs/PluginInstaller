@@ -24,6 +24,7 @@ This plugin as stated before, has an auto-updater so you do not need to manually
 - Plugin voting system
 - A search command
 - A plugin info command that tells you about the plugin you search
+- Install command also installs a basic config of the plugin
 
 ## How to contribute:
 Since PluginInstaller runs on an autoupdater, all contributions must be made from pull requests either by forks or branches approved by someone in the darverdevs group and tested before a pull request is made
