@@ -4,8 +4,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
 public class PluginList {
-    private static String[] AlphaPluginList = new String[]{"AntiSwear", "BitchFilter", "CoreProtect", "CrackShot", "DupePatch", "DynMap", "Essentials",
-    "EssenttialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "MCore", "MyWarp",};
+    private static String[] AlphaPluginList = new String[]{"AntiSwear", "AyunCord", "BitchFilter", "CoreProtect", "CrackShot", "CraftBook", "DupePatch", "DynMap", "Essentials",
+    "EssenttialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "MCore", "Multiverse", "MyWarp", "PermissionSex", "ProtocolLib",
+    "Vault", "WorldEdit", "WorldGuard"};
     public static void SendPG1ToSender(CommandSender sender) {
         sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
         int SecondCollumn = 8;
@@ -45,6 +46,37 @@ public class PluginList {
         }
 
         sender.sendMessage("       Page 2 of 12");
+        sender.sendMessage("Note: You do not need to have proper");
+        sender.sendMessage("capitalization when using the install command");
+    }
+
+    public static void SendPG3ToSender(CommandSender sender) {
+        sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
+
+        // List -------------------------------------------------------------
+        int SecondCollumn = 36;
+        for (int i = 29; i < 36; i++) {
+            String Col31;
+            String Col32;
+
+            //  Null checkers for elements in the Array
+            if (AlphaPluginList[i-1] != null) {
+                Col31 = AlphaPluginList[i-1];
+            } else {
+                Col31 = "N/A";
+            }
+            if (AlphaPluginList[SecondCollumn-1] != null) {
+                Col32 = AlphaPluginList[SecondCollumn-1];
+            } else {
+                Col32 = "N/A";
+            }
+            // _________________________________________
+
+            sender.sendMessage(i+". "+ Col31 + "" + SecondCollumn + ". " + Col32);
+            SecondCollumn++;
+        }
+
+        sender.sendMessage("       Page 3 of 12");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }

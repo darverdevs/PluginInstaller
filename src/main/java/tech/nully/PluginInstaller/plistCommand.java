@@ -12,8 +12,6 @@ public class plistCommand implements CommandExecutor {
         if (cmd.getName().equalsIgnoreCase("plist") && sender.isOp() || sender instanceof ConsoleCommandSender) {
             if (args.length >= 1) {
                 if (args[0] == null) {
-                    sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
-                    // TODO: Finish this list
                     PluginList.SendPG1ToSender(sender);
                     return true;
                 }
@@ -25,11 +23,21 @@ public class plistCommand implements CommandExecutor {
                 } catch (NumberFormatException n) {
                     sender.sendMessage(ChatColor.RED + "That is not a valid page number!");
                     PageArgIsInt = false;
-                    return false;
+                    return true;
                 }
-
                 if (PageArgIsInt) {
-
+                    int PageArg = Integer.parseInt(args[0]);
+                    switch (PageArg) {
+                        case 1:
+                            PluginList.SendPG1ToSender(sender);
+                            break;
+                        case 2:
+                            PluginList.SendPG2ToSender(sender);
+                            break;
+                        case 3:
+                            PluginList.SendPG3ToSender(sender);
+                            break;
+                    }
                 }
             }
          }
