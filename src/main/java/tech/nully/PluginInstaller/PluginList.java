@@ -17,13 +17,13 @@ public class PluginList {
         for (int i = 1; i < 8; i++) {
             int Spaces = 21-AlphaPluginList[i-1].length();
             List<String> spaces = new ArrayList<>();
-            for (int forInt = 0; i < Spaces; i++) {
+            for (int forInt = 0; forInt < Spaces; forInt++) {
                 spaces.add(" ");
             }
             sender.sendMessage(i+". "+ AlphaPluginList[i-1] + "" + Utils.ListToString(spaces) + "" +SecondCollumn + ". " + AlphaPluginList[SecondCollumn-1]);
             SecondCollumn++;
         }
-        sender.sendMessage("       Page 1 of 12");
+        sender.sendMessage("             Page 1 of 12");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -34,8 +34,8 @@ public class PluginList {
         // List -------------------------------------------------------------
         int SecondCollumn = 22;
         for (int i = 15; i < 22; i++) {
-            String Col1 = "";
-            String Col2 = "";
+            String Col1;
+            String Col2;
 
             //  Null checkers for elements in the Array
             try {
@@ -52,15 +52,14 @@ public class PluginList {
 
             int Spaces = 21-AlphaPluginList[i-1].length();
             List<String> spaces = new ArrayList<>();
-            for (int forInt = 0; i < Spaces; i++) {
+            for (int forInt = 0; forInt < Spaces; forInt++) {
                 spaces.add(" ");
             }
-
             sender.sendMessage(i+". "+ Col1 + "" + Utils.ListToString(spaces) + "" + SecondCollumn + ". " + Col2);
             SecondCollumn++;
         }
 
-        sender.sendMessage("       Page 2 of 12");
+        sender.sendMessage("             Page 2 of 12");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -87,17 +86,16 @@ public class PluginList {
             }
             // _________________________________________
 
-            int Spaces = 21-AlphaPluginList[i-1].length();
+            int Spaces = 21-Col31.length();
             List<String> spaces = new ArrayList<>();
-            for (int forInt = 0; i < Spaces; i++) {
+            for (int forInt = 0; forInt < Spaces; forInt++) {
                 spaces.add(" ");
             }
-
             sender.sendMessage(i+". "+ Col31 + "" + Utils.ListToString(spaces) + "" + SecondCollumn + ". " + Col32);
             SecondCollumn++;
         }
 
-        sender.sendMessage("       Page 3 of 12");
+        sender.sendMessage("             Page 3 of 12");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
