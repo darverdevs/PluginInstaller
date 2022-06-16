@@ -3,6 +3,9 @@ package tech.nully.PluginInstaller;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PluginList {
     private static String[] AlphaPluginList = new String[]{"AntiSwear", "AyunCord", "BitchFilter", "CoreProtect", "CrackShot", "CraftBook", "DupePatch", "DynMap", "Essentials",
     "EssenttialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "MCore", "Multiverse", "MyWarp", "PermissionSex", "ProtocolLib",
@@ -10,8 +13,14 @@ public class PluginList {
     public static void SendPG1ToSender(CommandSender sender) {
         sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
         int SecondCollumn = 8;
+
         for (int i = 1; i < 8; i++) {
-            sender.sendMessage(i+". "+ AlphaPluginList[i-1] + "" +SecondCollumn + ". " + AlphaPluginList[SecondCollumn-1]);
+            int Spaces = 21-AlphaPluginList[i-1].length();
+            List<String> spaces = new ArrayList<>();
+            for (int forInt = 0; i < Spaces; i++) {
+                spaces.add(" ");
+            }
+            sender.sendMessage(i+". "+ AlphaPluginList[i-1] + "" + Utils.ListToString(spaces) + "" +SecondCollumn + ". " + AlphaPluginList[SecondCollumn-1]);
             SecondCollumn++;
         }
         sender.sendMessage("       Page 1 of 12");
@@ -29,19 +38,25 @@ public class PluginList {
             String Col2 = "";
 
             //  Null checkers for elements in the Array
-            if (AlphaPluginList[i-1] != null) {
+            try {
                 Col1 = AlphaPluginList[i-1];
-            } else {
+            } catch (ArrayIndexOutOfBoundsException y) {
                 Col1 = "N/A";
             }
-            if (AlphaPluginList[SecondCollumn-1] != null) {
+            try {
                 Col2 = AlphaPluginList[SecondCollumn-1];
-            } else {
+            } catch (ArrayIndexOutOfBoundsException a) {
                 Col2 = "N/A";
             }
             // _________________________________________
 
-            sender.sendMessage(i+". "+ Col1 + "" + SecondCollumn + ". " + Col2);
+            int Spaces = 21-AlphaPluginList[i-1].length();
+            List<String> spaces = new ArrayList<>();
+            for (int forInt = 0; i < Spaces; i++) {
+                spaces.add(" ");
+            }
+
+            sender.sendMessage(i+". "+ Col1 + "" + Utils.ListToString(spaces) + "" + SecondCollumn + ". " + Col2);
             SecondCollumn++;
         }
 
@@ -60,19 +75,25 @@ public class PluginList {
             String Col32;
 
             //  Null checkers for elements in the Array
-            if (AlphaPluginList[i-1] != null) {
+            try {
                 Col31 = AlphaPluginList[i-1];
-            } else {
+            } catch (ArrayIndexOutOfBoundsException e) {
                 Col31 = "N/A";
             }
-            if (AlphaPluginList[SecondCollumn-1] != null) {
+            try {
                 Col32 = AlphaPluginList[SecondCollumn-1];
-            } else {
+            } catch (ArrayIndexOutOfBoundsException e) {
                 Col32 = "N/A";
             }
             // _________________________________________
 
-            sender.sendMessage(i+". "+ Col31 + "" + SecondCollumn + ". " + Col32);
+            int Spaces = 21-AlphaPluginList[i-1].length();
+            List<String> spaces = new ArrayList<>();
+            for (int forInt = 0; i < Spaces; i++) {
+                spaces.add(" ");
+            }
+
+            sender.sendMessage(i+". "+ Col31 + "" + Utils.ListToString(spaces) + "" + SecondCollumn + ". " + Col32);
             SecondCollumn++;
         }
 

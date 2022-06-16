@@ -11,9 +11,10 @@ public class plistCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("plist") && sender.isOp() || sender instanceof ConsoleCommandSender) {
             if (args.length >= 1) {
-                if (args[0] == null) {
-                    PluginList.SendPG1ToSender(sender);
-                    return true;
+                try {
+                    System.out.println(args[0]);
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    System.out.println("error");
                 }
                 int listPage = 0;
                 boolean PageArgIsInt = false;
@@ -30,13 +31,13 @@ public class plistCommand implements CommandExecutor {
                     switch (PageArg) {
                         case 1:
                             PluginList.SendPG1ToSender(sender);
-                            break;
+                            return true;
                         case 2:
                             PluginList.SendPG2ToSender(sender);
-                            break;
+                            return true;
                         case 3:
                             PluginList.SendPG3ToSender(sender);
-                            break;
+                            return true;
                     }
                 }
             }
