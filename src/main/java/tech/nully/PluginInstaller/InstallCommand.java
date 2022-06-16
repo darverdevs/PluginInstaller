@@ -35,15 +35,23 @@ public class InstallCommand implements CommandExecutor {
                             try (InputStream in = plugin.openStream()) {
 
                                 // Installs the plugin
-                                ins.InstallPlugin(in, Install_Jar.toLowerCase());
+                                ins.InstallPlugin(in, Install_Jar.substring(0, 1).toUpperCase() + Install_Jar.substring(1));
                                 snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + Install_Jar.toUpperCase() + ChatColor.WHITE + " plugin!");
                                 return true;
                             } catch (IOException e) {}
                         } else if (Install_Jar.equalsIgnoreCase("recommended")) {
                             InputStream reco1 = URI.create("https://github.com/darverdevs/PluginInstallerRepo/raw/main/dupepatch.jar")
                                     .toURL().openStream();
+                            InputStream reco2 = URI.create("https://github.com/darverdevs/PluginInstallerRepo/raw/main/essentials.jar")
+                                    .toURL().openStream();
+                            InputStream reco3 = URI.create("https://github.com/darverdevs/PluginInstallerRepo/raw/main/essentialsspawn.jar")
+                                    .toURL().openStream();
                             ins.InstallPlugin(reco1, "DupePatch");
                             snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "DupePatch" + ChatColor.WHITE + " plugin!");
+                            ins.InstallPlugin(reco1, "Essentials");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "Essentials" + ChatColor.WHITE + " plugin!");
+                            ins.InstallPlugin(reco1, "EssentialsSpawn");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
                             return true;
                         }
                     } catch (IOException e) {

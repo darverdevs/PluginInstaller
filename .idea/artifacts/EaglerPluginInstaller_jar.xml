@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/EaglerPluginInstaller_jar</output-path>
     <root id="archive" name="EaglerPluginInstaller.jar">
       <element id="module-output" name="EaglerPluginInstaller" />
+      <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1" />
     </root>
   </artifact>
 </component>
