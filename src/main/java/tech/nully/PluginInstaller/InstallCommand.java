@@ -59,11 +59,11 @@ public class InstallCommand implements CommandExecutor {
                             ins.InstallPlugin(reco3, "EssentialsSpawn");
                             snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
                             ins.InstallPlugin(reco4, "AuthMe");
-                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "AuthMe" + ChatColor.WHITE + " plugin!");
                             ins.InstallPlugin(reco5, "Worldedit");
-                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "Worldedit" + ChatColor.WHITE + " plugin!");
                             ins.InstallPlugin(reco6, "BitchFilter");
-                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "BitchFilter" + ChatColor.WHITE + " plugin!");
                             return true;
                         }
                     } catch (IOException e) {
