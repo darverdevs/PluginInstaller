@@ -46,11 +46,23 @@ public class InstallCommand implements CommandExecutor {
                                     .toURL().openStream();
                             InputStream reco3 = URI.create("https://github.com/darverdevs/PluginInstallerRepo/raw/main/essentialsspawn.jar")
                                     .toURL().openStream();
+                            InputStream reco4 = URI.create("https://github.com/darverdevs/PluginInstallerRepo/raw/main/authme.jar")
+                                    .toURL().openStream();
+                            InputStream reco5 = URI.create("https://github.com/darverdevs/PluginInstallerRepo/raw/main/worldedit.jar")
+                                    .toURL().openStream();
+                            InputStream reco6 = URI.create("https://github.com/darverdevs/PluginInstallerRepo/raw/main/bitchfilter.jar")
+                                    .toURL().openStream();
                             ins.InstallPlugin(reco1, "DupePatch");
                             snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "DupePatch" + ChatColor.WHITE + " plugin!");
-                            ins.InstallPlugin(reco1, "Essentials");
+                            ins.InstallPlugin(reco2, "Essentials");
                             snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "Essentials" + ChatColor.WHITE + " plugin!");
-                            ins.InstallPlugin(reco1, "EssentialsSpawn");
+                            ins.InstallPlugin(reco3, "EssentialsSpawn");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
+                            ins.InstallPlugin(reco4, "AuthMe");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
+                            ins.InstallPlugin(reco5, "Worldedit");
+                            snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
+                            ins.InstallPlugin(reco6, "BitchFilter");
                             snder.sendMessage("You have successfully installed the " + ChatColor.GREEN + "EssentialsSpawn" + ChatColor.WHITE + " plugin!");
                             return true;
                         }
