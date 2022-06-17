@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PluginList {
-    private static String[] AlphaPluginList = new String[]{"AntiSwear", "AuthMe", "AyunCord", "BitchFilter", "Citizens", "ClearLag", "CoreProtect", "CrackShot", "CraftBook", "DupePatch", "DynMap", "Essentials",
+    private static String[] AlphaPluginList = new String[]{"AntiSwear", "AuthMe", "AyunCord", "BitchFilter", "Citizens", "ClearLag", "CommandNPC", "CoreProtect", "CrackShot", "CraftBook", "DupePatch", "DynMap", "Essentials",
     "EssenttialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "MCore", "Multiverse", "MyWarp", "PermissionSex", "ProtocolLib",
     "Vault", "WorldEdit", "WorldGuard"};
     public static void SendPG1ToSender(CommandSender sender) {
