@@ -23,7 +23,7 @@ public class PluginList {
             sender.sendMessage(i+". "+ AlphaPluginList[i-1] + "" + Utils.ListToString(spaces) + "" +SecondCollumn + ". " + AlphaPluginList[SecondCollumn-1]);
             SecondCollumn++;
         }
-        sender.sendMessage("             Page 1 of 12");
+        sender.sendMessage("             Page 1 of 3");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -59,7 +59,7 @@ public class PluginList {
             SecondCollumn++;
         }
 
-        sender.sendMessage("             Page 2 of 12");
+        sender.sendMessage("             Page 2 of 3");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -95,7 +95,7 @@ public class PluginList {
             SecondCollumn++;
         }
 
-        sender.sendMessage("             Page 3 of 12");
+        sender.sendMessage("             Page 3 of 3");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }

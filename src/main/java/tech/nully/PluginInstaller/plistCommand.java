@@ -10,12 +10,11 @@ public class plistCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("plist") && sender.isOp() || sender instanceof ConsoleCommandSender) {
+            if (args.length == 0) {
+                PluginList.SendPG1ToSender(sender);
+                return true;
+            }
             if (args.length >= 1) {
-                try {
-                    System.out.println(args[0]);
-                } catch (ArrayIndexOutOfBoundsException e) {
-                    System.out.println("error");
-                }
                 int listPage = 0;
                 boolean PageArgIsInt = false;
                 try {
