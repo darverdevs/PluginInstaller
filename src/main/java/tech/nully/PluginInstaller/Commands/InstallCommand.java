@@ -1,10 +1,11 @@
-package tech.nully.PluginInstaller;
+package tech.nully.PluginInstaller.Commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
+import tech.nully.PluginInstaller.Installer;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -68,6 +69,7 @@ public class InstallCommand implements CommandExecutor {
                         }
                     } catch (IOException e) {
                         snder.sendMessage("\"" + Install_Jar + "\"" + "is not a valid plugin from the database");
+                        return true;
                     }
                 }
             }

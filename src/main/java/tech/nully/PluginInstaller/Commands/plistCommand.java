@@ -1,10 +1,11 @@
-package tech.nully.PluginInstaller;
+package tech.nully.PluginInstaller.Commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
+import tech.nully.PluginInstaller.PluginList;
 
 public class plistCommand implements CommandExecutor {
     @Override
