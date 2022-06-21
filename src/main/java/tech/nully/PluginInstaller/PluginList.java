@@ -9,9 +9,11 @@ import java.util.List;
 public class PluginList {
     private static String[] AlphaPluginList = new String[]{"AdminFun", "AntiSwear", "AuthMe", "AyunCord", "BattleArena", "BitchFilter", "BloodMoon",
             "ChestMaster", "Citizens", "ClearLag", "CommandNPC", "ComZombies", "CoreProtect", "CrackShot", "CraftBook", "DupePatch", "DynMap", "Essentials",
-            "EssenttialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "FakePlayersOnline", "LortinsRPGMobs", "MagicSpellBook",
-            "MagicSpells", "MCore", "Multiverse", "MyWarp",
-            "PermissionSex", "ProtocolLib", "Vault", "WorldEdit", "WorldGuard"};
+            "EssentialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "FakePlayersOnline", "LortinsRPGMobs", "MagicSpellBook",
+            "MagicSpells", "MarriageMaster", "MCMMO", "MCMMORankUp", "MCore", "MobArena", "MonsterApocalypse", "MonsterMadness", "Multiverse", "Music", "MyRPG",
+            "MyWarp", "OreGenerator", "PermissionSex", "ProtocolLib", "PVPSticks", "RealisticBackpacks", "RPGTrades", "RuneCraft", "ServerMiniMap", "Shop",
+            "SignShop", "SilkSpawners", "SimpleClans", "Slaves", "SlimeFun", "StackableItems", "Stats", "TheArcher", "Timber", "ToolStats", "UberEnchant", "UCars",
+            "Vampire", "Vault", "VEnchant", "Wizards", "WorldEdit", "WorldGuard"};
     public static void SendPG1ToSender(CommandSender sender) {
         sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
         int SecondCollumn = 8;
