@@ -38,6 +38,9 @@ public class plistCommand implements CommandExecutor {
                         case 3:
                             PluginList.SendPG3ToSender(sender);
                             return true;
+                        case 4:
+                            PluginList.SendPG4ToSender(sender);
+                            return true;
                     }
                 }
             }

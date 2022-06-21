@@ -7,9 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PluginList {
-    private static String[] AlphaPluginList = new String[]{"AntiSwear", "AuthMe", "AyunCord", "BitchFilter", "Citizens", "ClearLag", "CommandNPC", "CoreProtect", "CrackShot", "CraftBook", "DupePatch", "DynMap", "Essentials",
-    "EssenttialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "MCore", "Multiverse", "MyWarp", "PermissionSex", "ProtocolLib",
-    "Vault", "WorldEdit", "WorldGuard"};
+    private static String[] AlphaPluginList = new String[]{"AdminFun", "AntiSwear", "AuthMe", "AyunCord", "BattleArena", "BitchFilter", "BloodMoon",
+            "ChestMaster", "Citizens", "ClearLag", "CommandNPC", "ComZombies", "CoreProtect", "CrackShot", "CraftBook", "DupePatch", "DynMap", "Essentials",
+            "EssenttialsAntiBuild", "EssentialsChat", "EssentialsProtect", "EssentialsSpawn", "Factions", "FakePlayersOnline", "LortinsRPGMobs", "MagicSpellBook",
+            "MagicSpells", "MCore", "Multiverse", "MyWarp",
+            "PermissionSex", "ProtocolLib", "Vault", "WorldEdit", "WorldGuard"};
     public static void SendPG1ToSender(CommandSender sender) {
         sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
         int SecondCollumn = 8;
@@ -23,7 +25,7 @@ public class PluginList {
             sender.sendMessage(i+". "+ AlphaPluginList[i-1] + "" + Utils.ListToString(spaces) + "" +SecondCollumn + ". " + AlphaPluginList[SecondCollumn-1]);
             SecondCollumn++;
         }
-        sender.sendMessage("             Page 1 of 3");
+        sender.sendMessage("             Page 1 of 4");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -59,7 +61,7 @@ public class PluginList {
             SecondCollumn++;
         }
 
-        sender.sendMessage("             Page 2 of 3");
+        sender.sendMessage("             Page 2 of 4");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -95,7 +97,43 @@ public class PluginList {
             SecondCollumn++;
         }
 
-        sender.sendMessage("             Page 3 of 3");
+        sender.sendMessage("             Page 3 of 4");
+        sender.sendMessage("Note: You do not need to have proper");
+        sender.sendMessage("capitalization when using the install command");
+    }
+
+    public static void SendPG4ToSender(CommandSender sender) {
+        sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
+
+        // List -------------------------------------------------------------
+        int SecondCollumn = 50;
+        for (int i = 43; i < 50; i++) {
+            String Col41;
+            String Col42;
+
+            //  Null checkers for elements in the Array
+            try {
+                Col41 = AlphaPluginList[i-1];
+            } catch (ArrayIndexOutOfBoundsException e) {
+                Col41 = "N/A";
+            }
+            try {
+                Col42 = AlphaPluginList[SecondCollumn-1];
+            } catch (ArrayIndexOutOfBoundsException e) {
+                Col42 = "N/A";
+            }
+            // _________________________________________
+
+            int Spaces = 21-Col41.length();
+            List<String> spaces = new ArrayList<>();
+            for (int forInt = 0; forInt < Spaces; forInt++) {
+                spaces.add(" ");
+            }
+            sender.sendMessage(i+". "+ Col41 + "" + Utils.ListToString(spaces) + "" + SecondCollumn + ". " + Col42);
+            SecondCollumn++;
+        }
+
+        sender.sendMessage("             Page 4 of 4");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
