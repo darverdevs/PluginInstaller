@@ -27,7 +27,7 @@ public class PluginList {
             sender.sendMessage(i+". "+ AlphaPluginList[i-1] + "" + Utils.ListToString(spaces) + "" +SecondCollumn + ". " + AlphaPluginList[SecondCollumn-1]);
             SecondCollumn++;
         }
-        sender.sendMessage("             Page 1 of 4");
+        sender.sendMessage("             Page 1 of 6");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -63,7 +63,7 @@ public class PluginList {
             SecondCollumn++;
         }
 
-        sender.sendMessage("             Page 2 of 4");
+        sender.sendMessage("             Page 2 of 6");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -99,7 +99,7 @@ public class PluginList {
             SecondCollumn++;
         }
 
-        sender.sendMessage("             Page 3 of 4");
+        sender.sendMessage("             Page 3 of 6");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
@@ -135,7 +135,79 @@ public class PluginList {
             SecondCollumn++;
         }
 
-        sender.sendMessage("             Page 4 of 4");
+        sender.sendMessage("             Page 4 of 6");
+        sender.sendMessage("Note: You do not need to have proper");
+        sender.sendMessage("capitalization when using the install command");
+    }
+
+    public static void SendPG5ToSender(CommandSender sender) {
+        sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
+
+        // List -------------------------------------------------------------
+        int SecondCollumn = 64;
+        for (int i = 57; i < 64; i++) {
+            String Col41;
+            String Col42;
+
+            //  Null checkers for elements in the Array
+            try {
+                Col41 = AlphaPluginList[i-1];
+            } catch (ArrayIndexOutOfBoundsException e) {
+                Col41 = "N/A";
+            }
+            try {
+                Col42 = AlphaPluginList[SecondCollumn-1];
+            } catch (ArrayIndexOutOfBoundsException e) {
+                Col42 = "N/A";
+            }
+            // _________________________________________
+
+            int Spaces = 21-Col41.length();
+            List<String> spaces = new ArrayList<>();
+            for (int forInt = 0; forInt < Spaces; forInt++) {
+                spaces.add(" ");
+            }
+            sender.sendMessage(i+". "+ Col41 + "" + Utils.ListToString(spaces) + "" + SecondCollumn + ". " + Col42);
+            SecondCollumn++;
+        }
+
+        sender.sendMessage("             Page 5 of 6");
+        sender.sendMessage("Note: You do not need to have proper");
+        sender.sendMessage("capitalization when using the install command");
+    }
+
+    public static void SendPG6ToSender(CommandSender sender) {
+        sender.sendMessage(ChatColor.GREEN + "Here is a list of available plugins in the database:");
+
+        // List -------------------------------------------------------------
+        int SecondCollumn = 78;
+        for (int i = 71; i < 78; i++) {
+            String Col41;
+            String Col42;
+
+            //  Null checkers for elements in the Array
+            try {
+                Col41 = AlphaPluginList[i-1];
+            } catch (ArrayIndexOutOfBoundsException e) {
+                Col41 = "N/A";
+            }
+            try {
+                Col42 = AlphaPluginList[SecondCollumn-1];
+            } catch (ArrayIndexOutOfBoundsException e) {
+                Col42 = "N/A";
+            }
+            // _________________________________________
+
+            int Spaces = 21-Col41.length();
+            List<String> spaces = new ArrayList<>();
+            for (int forInt = 0; forInt < Spaces; forInt++) {
+                spaces.add(" ");
+            }
+            sender.sendMessage(i+". "+ Col41 + "" + Utils.ListToString(spaces) + "" + SecondCollumn + ". " + Col42);
+            SecondCollumn++;
+        }
+
+        sender.sendMessage("             Page 6 of 6");
         sender.sendMessage("Note: You do not need to have proper");
         sender.sendMessage("capitalization when using the install command");
     }
