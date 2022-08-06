@@ -6,7 +6,7 @@
 
     <groupId>tech.nully</groupId>
     <artifactId>EaglerPluginInstaller</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.5</version>
     <packaging>jar</packaging>
 
     <name>EaglerPluginInstaller</name>
@@ -32,13 +32,47 @@
             <groupId>com.github.EaglerMaven</groupId>
             <artifactId>craftbukkit</artifactId>
             <version>1.5.2-R1.0</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
-            <version>1.1</version>
+            <version>1.1.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+
+                        <configuration>
+                            <outputFile>${project.basedir}/out/${project.artifactId}.jar</outputFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
