@@ -29,7 +29,7 @@ public class Main extends JavaPlugin {
         ConsoleSender.sendMessage("--------------------------------------------");
         ConsoleSender.sendMessage("--------------------------------------------");
         ConsoleSender.sendMessage(
-                ChatColor.GREEN + "[EaglerPluginInstaller]" + ChatColor.AQUA + " EaglerPluginInstaller V1.1.4 is now Enabled! :D");
+                ChatColor.GREEN + "[EaglerPluginInstaller]" + ChatColor.AQUA + " EaglerPluginInstaller V1.1.5 is now Enabled! :D");
         ConsoleSender.sendMessage("To use PluginInstaller, run the command \"/install <pluginname>\" (\"install <pluginname>\" in console) to install a plugin");
         ConsoleSender.sendMessage("To get a list of installable plugins, use the command \"/plist\" or \"plist\" in console");
         ConsoleSender.sendMessage("You can request to add a new plugin to the database by going to https://github.com/darverdevs/PluginInstallerRepo/tree/main");
@@ -43,7 +43,7 @@ public class Main extends JavaPlugin {
         ConsoleSender.sendMessage("--------------------------------------------");
         ConsoleSender.sendMessage("--------------------------------------------");
         ConsoleSender.sendMessage(
-                ChatColor.GREEN + "[EaglerPluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.1.4 is now Disabled! D:");
+                ChatColor.GREEN + "[EaglerPluginInstaller]" + ChatColor.AQUA + " PluginInstaller V1.1.5 is now Disabled! D:");
         ConsoleSender.sendMessage("--------------------------------------------");
         ConsoleSender.sendMessage("--------------------------------------------");
     }
