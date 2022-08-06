@@ -33,7 +33,7 @@ public class Installer {
         File file = new File(Main.getInstance().getDataFolder().getParent() + "/EaglerPluginUpdater.jar");
         System.out.println("Check 1 passed");
         try {
-            InputStream in = URI.create("https://github.com/darverdevs/EaglerPluginUpdater/raw/main/out/artifacts/EaglerPluginUpdater_jar/EaglerPluginUpdater.jar")
+            InputStream in = URI.create("https://github.com/darverdevs/EaglerPluginUpdater/raw/main/target/EaglerPluginUpdater-1.0.9.jar")
                     .toURL().openStream();
             System.out.println("Check 3 passed");
             Installer ins = new Installer();
